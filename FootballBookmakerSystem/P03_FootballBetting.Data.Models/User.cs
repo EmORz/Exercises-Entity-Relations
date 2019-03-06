@@ -1,11 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace P03_FootballBetting.Data.Models
 {
     public class User
     {
-        //UserId, Username, Password, Email, Name, Balance
 
+        public User()
+        {
+            this.Bets = new HashSet<Bet>();
+        }
+        //UserId, Username, Password, Email, Name, Balance
         [Key]
         public int UserId { get; set; }
 
@@ -18,6 +23,9 @@ namespace P03_FootballBetting.Data.Models
         public string Name { get; set; }
 
         public decimal Balance { get; set; }
+
+        public ICollection<Bet> Bets { get; set; }
+
 
     }
 }

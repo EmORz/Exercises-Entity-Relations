@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj",
       "projectName": "P03_FootballBetting.Data.Models",
-      "projectPath": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

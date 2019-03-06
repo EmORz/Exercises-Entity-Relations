@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace P03_FootballBetting.Data.Models
 {
     public class Game
     {
+
+        public Game()
+        {
+            this.Bets = new HashSet<Bet>();
+            this.PlayerStatistics = new HashSet<PlayerStatistic>();
+        }
         //GameId, HomeTeamId, AwayTeamId, HomeTeamGoals, AwayTeamGoals, DateTime, HomeTeamBetRate, AwayTeamBetRate, DrawBetRate, Result)
         [Key]
         public int GameId { get; set; }
-
-        public int AwayTeamId { get; set; }
-        public Team AwayTeam { get; set; }
-
-        public int HomeTeamId { get; set; }
-        public Team HomeTeam { get; set; }
 
         public int HomeTeamGoals { get; set; }
 
@@ -29,7 +30,18 @@ namespace P03_FootballBetting.Data.Models
 
         public string Result { get; set; }
 
+        public int AwayTeamId { get; set; }
+        public Team AwayTeam { get; set; }
+
+        public int HomeTeamId { get; set; }
+        public Team HomeTeam { get; set; }
         //
+        //•	A Game has one HomeTeam and one AwayTeam and a Team can have many HomeGames and many AwayGames
+
+        public ICollection<Bet> Bets { get; set; }
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+
+
 
 
 

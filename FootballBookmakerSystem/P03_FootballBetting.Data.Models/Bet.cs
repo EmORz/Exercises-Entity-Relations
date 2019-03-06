@@ -1,11 +1,12 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace P03_FootballBetting.Data.Models
 {
     public class Bet
     {
         //BetId, Amount, Prediction, DateTime, UserId, GameId
-
+        [Key]
         public int BetId { get; set; }
 
         public decimal Amount { get; set; }

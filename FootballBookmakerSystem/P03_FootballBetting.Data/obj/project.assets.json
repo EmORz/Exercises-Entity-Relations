@@ -910,6 +910,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "P03_FootballBetting.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/P03_FootballBetting.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P03_FootballBetting.Data.Models.dll": {}
+        }
       }
     }
   },
@@ -3476,12 +3486,18 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "P03_FootballBetting.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../P03_FootballBetting.Data.Models/P03_FootballBetting.Data.Models.csproj",
+      "msbuildProject": "../P03_FootballBetting.Data.Models/P03_FootballBetting.Data.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "P03_FootballBetting.Data.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3491,11 +3507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data\\P03_FootballBetting.Data.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data\\P03_FootballBetting.Data.csproj",
       "projectName": "P03_FootballBetting.Data",
-      "projectPath": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data\\P03_FootballBetting.Data.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data\\P03_FootballBetting.Data.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\FootballBookmakerSystem\\P03_FootballBetting.Data\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3513,7 +3529,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\StudentSystem_Project\\Exercises-Entity-Relations\\FootballBookmakerSystem\\P03_FootballBetting.Data.Models\\P03_FootballBetting.Data.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

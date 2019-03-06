@@ -1,4 +1,6 @@
-﻿namespace P03_FootballBetting.Data.Models
+﻿using System.Collections.Generic;
+
+namespace P03_FootballBetting.Data.Models
 {
     public class PlayerStatistic
     {
@@ -15,5 +17,10 @@
         public int Assists { get; set; }
 
         public int MinutesPlayed { get; set; }
+
+        public ICollection<Game> Games { get; set; }
+
+        public ICollection<Player> Players { get; set; }
+
     }
 }
